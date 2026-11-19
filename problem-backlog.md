@@ -16,6 +16,7 @@ mỗi người sẽ tự xử lý theo một kiểu — và đó là nguồn l�
 | [P-003](#p-003) | Phải vẽ lại box y hệt qua nhiều frame liên tiếp | Pain point công cụ | — | 🗣️ Đang bàn | — |
 
 | [P-004](#p-004) | Phải bấm outside từng điểm trên khuôn mặt khi bị che hoặc ra khỏi khung, mất thời gian và dễ sót | Pain point công cụ | — | 🔴 Mở | — |
+| [P-005](#p-005) | Chưa có hướng dẫn rõ ràng về cách gán nhãn tay trái khi guideline vẫn yêu cầu label tay trái | Guideline chưa nói tới | — | 🔴 Mở | — |
 **Loại**
 
 | Loại | Nghĩa là |
@@ -95,6 +96,22 @@ mỗi người sẽ tự xử lý theo một kiểu — và đó là nguồn l�
   1. Cho phép đánh dấu toàn bộ các điểm trên khuôn mặt là outside cùng lúc khi khuôn mặt bị che hoặc ra khỏi khung
   2. Tự động nhận diện và đánh dấu các điểm không nhìn thấy là outside
   3. Giữ nguyên cách làm thủ công hiện tại nhưng thêm phím tắt hoặc công cụ hỗ trợ để đánh dấu nhanh hơn
+- **Kết quả:** 🔴 Mở
+
+## P-005
+
+**Chưa có hướng dẫn rõ ràng về cách gán nhãn tay trái khi guideline vẫn yêu cầu label tay trái**
+
+- **Loại:** Guideline chưa nói tới
+- **Mục guideline:** —
+- **Người phát hiện:** @hoangquocmanh2004 · 19/11/2026
+- **Link CVAT:** http://localhost:8080/tasks/26/jobs/22?frame=0
+- **Mô tả:** Người dùng thắc mắc về cách gán nhãn cho tay trái trong trường hợp guideline vẫn bắt label tay trái nhưng không có hướng dẫn cụ thể. Do guideline chưa đề cập nên gây khó khăn khi thực hiện nhãn, không biết có cần gán nhãn tay trái riêng hay theo cách nào.
+- **Các cách hiểu:**
+  1. Gán nhãn tay trái theo cách thông thường như tay phải
+  2. Bỏ qua nhãn tay trái nếu không rõ cách làm
+  3. Chờ hướng dẫn bổ sung từ guideline
+- **Xử lý tạm trong lúc chờ:** Gán nhãn tay trái theo cách tương tự tay phải hoặc theo thỏa thuận nhóm
 - **Kết quả:** 🔴 Mở
 
 ---
