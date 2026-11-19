@@ -15,6 +15,7 @@ mỗi người sẽ tự xử lý theo một kiểu — và đó là nguồn l�
 | [P-002](#p-002) | Xe bị che khuất hơn một nửa | Guideline chưa nói tới | §3.4 | ↗️ Hỏi BTC | — |
 | [P-003](#p-003) | Phải vẽ lại box y hệt qua nhiều frame liên tiếp | Pain point công cụ | — | 🗣️ Đang bàn | — |
 
+| [P-004](#p-004) | Phải bấm outside từng điểm trên khuôn mặt khi bị che hoặc ra khỏi khung, mất thời gian và dễ sót | Pain point công cụ | — | 🔴 Mở | — |
 **Loại**
 
 | Loại | Nghĩa là |
@@ -80,6 +81,21 @@ mỗi người sẽ tự xử lý theo một kiểu — và đó là nguồn l�
   2. Viết script đọc file export của CVAT, nhân box sang các frame kế tiếp, rồi import lại.
 - **Kết quả:** 🗣️ Đang bàn. Nếu chọn hướng 2 thì đổi trạng thái sang 🛠️ và làm trong
   [`source-tool/`](source-tool/).
+
+## P-004
+
+**Phải bấm outside từng điểm trên khuôn mặt khi bị che hoặc ra khỏi khung, mất thời gian và dễ sót**
+
+- **Loại:** Pain point công cụ
+- **Mục guideline:** —
+- **Người phát hiện:** @hoangquocmanh2004 · 19/11/2026
+- **Link CVAT:** http://localhost:8080/tasks/19/jobs/14?frame=0 — skeleton face 13 điểm
+- **Mô tả:** Khi khuôn mặt trong task faces bị che hoặc ra khỏi khung hình, người dùng phải đánh dấu từng điểm trong 13 điểm của skeleton face là outside một cách thủ công. Việc này rất chậm và dễ bỏ sót điểm, gây khó khăn trong quá trình gán nhãn.
+- **Hướng đang cân nhắc:**
+  1. Cho phép đánh dấu toàn bộ các điểm trên khuôn mặt là outside cùng lúc khi khuôn mặt bị che hoặc ra khỏi khung
+  2. Tự động nhận diện và đánh dấu các điểm không nhìn thấy là outside
+  3. Giữ nguyên cách làm thủ công hiện tại nhưng thêm phím tắt hoặc công cụ hỗ trợ để đánh dấu nhanh hơn
+- **Kết quả:** 🔴 Mở
 
 ---
 
