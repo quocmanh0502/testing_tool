@@ -17,6 +17,7 @@ mỗi người sẽ tự xử lý theo một kiểu — và đó là nguồn l�
 
 | [P-004](#p-004) | Phải bấm outside từng điểm trên khuôn mặt khi bị che hoặc ra khỏi khung, mất thời gian và dễ sót | Pain point công cụ | — | 🔴 Mở | — |
 | [P-005](#p-005) | Chưa có hướng dẫn rõ ràng về cách gán nhãn tay trái khi guideline vẫn yêu cầu label tay trái | Guideline chưa nói tới | — | 🔴 Mở | — |
+| [P-006](#p-006) | Lông mày không thể nhìn thấy khi gán nhãn khuôn mặt | Guideline chưa nói tới | — | 🔴 Mở | — |
 **Loại**
 
 | Loại | Nghĩa là |
@@ -112,6 +113,22 @@ mỗi người sẽ tự xử lý theo một kiểu — và đó là nguồn l�
   2. Bỏ qua nhãn tay trái nếu không rõ cách làm
   3. Chờ hướng dẫn bổ sung từ guideline
 - **Xử lý tạm trong lúc chờ:** Gán nhãn tay trái theo cách tương tự tay phải hoặc theo thỏa thuận nhóm
+- **Kết quả:** 🔴 Mở
+
+## P-006
+
+**Lông mày không thể nhìn thấy khi gán nhãn khuôn mặt**
+
+- **Loại:** Guideline chưa nói tới
+- **Mục guideline:** —
+- **Người phát hiện:** @hoangquocmanh2004 · 19/11/2026
+- **Link CVAT:** http://localhost:8080/tasks/443/jobs/1823?frame=3
+- **Mô tả:** Khi gán nhãn khuôn mặt, có trường hợp lông mày không thể nhìn thấy do góc quay hoặc che khuất. Hiện tại guideline không có hướng dẫn cụ thể về cách xử lý tình huống này, gây khó khăn cho người gán nhãn trong việc quyết định có nên bỏ qua hay đánh dấu như thế nào.
+- **Các cách hiểu:**
+  1. Bỏ qua phần lông mày khi không nhìn thấy
+  2. Dự đoán vị trí lông mày dựa trên các đặc điểm khuôn mặt còn lại
+  3. Đánh dấu đặc biệt cho các trường hợp lông mày bị che khuất
+- **Xử lý tạm trong lúc chờ:** Bỏ qua phần lông mày khi không thể nhìn thấy để tiếp tục gán nhãn các phần khác
 - **Kết quả:** 🔴 Mở
 
 ---
